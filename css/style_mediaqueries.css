@@ -1,0 +1,244 @@
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+
+    /****** SECTION SEARCH *********/
+    .search-third-container {
+        flex-direction: column;        
+        align-items: flex-start;
+    }
+
+    .third-container-content {
+        margin-bottom: 20px;
+    }
+
+    .third-container-content p {
+        margin: 0;
+    }
+
+    .button-span-text {
+        font-size: 16px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 15px;
+    }
+
+    .filter-buttons button {
+        margin-right: 0;
+    }
+
+    /****** SECTION ACCOMODATIONS ET POPULAR ***********/
+    .accomodations-and-popular {
+        flex-direction: column;
+    }
+
+    /****** Hebergements ***********/
+    .accomodations {
+        width: 100%;
+    }
+
+    /****** Populaires ***********/
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    /*** SECTION ACTIVITES ***/
+    .activities-container-content-articles img {
+        height: 200px;
+    }
+
+    .activities-container-content-articles h3 {
+        margin: 22.5px 19px;
+    }
+}
+
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .main-container {
+        padding: 0;
+    }   
+
+    /****** HEADER ******/
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-list-li {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding-top: 0;
+        padding-bottom: 15px;
+        width: 50%;
+    }
+
+    .li-first {
+        margin-right: 0;
+    }
+
+    nav li {
+        border-bottom: solid 2px transparent;
+        border-top: 0;
+
+    }
+
+    nav li:hover {
+        border-top: 0;
+        border-bottom: solid 2px #0065FC;
+        cursor: pointer;
+    }
+
+    /****** SECTION RECHERCHE ******/
+
+    .search {
+        padding: 0 20px;
+    }
+
+    .search-first-container {
+        margin: 30px 0 35px;
+    }
+
+    input {
+        padding: 0 12px;
+    }
+
+    .span-text {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    form button {
+        border-radius: 15px;
+    }
+
+    .search-third-container p {
+        font-size: 18px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filter-buttons button {
+        margin: 0;
+        width: 48%;
+    }
+
+    .button-span-text {
+        font-size: 14px;
+    }
+
+    .search-fourth-container {
+        margin-bottom: 35px;
+    }
+
+    /****** SECTION ACCOMODATIONS ET POPULAR ***********/
+    .accomodations-and-popular {
+        flex-direction: column-reverse;
+    }
+
+    /****** Populaires ***********/
+    .populaires {
+        margin-top: 0;
+        padding: 30px 20px;
+    }   
+
+    .accomodations-and-popular .background2 {
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+        margin: 15px 0 0;
+        gap: 15px;
+    }
+
+    .card a {
+        width: 100%;
+    }
+
+    /****** Hebergements ***********/
+    .accomodations-and-popular .background1 {
+        background-color: white;
+        padding: 35px 20px 20px;
+    }
+
+    .accomodations h2 {
+        margin: 0 0 15px;
+    }
+
+    .accomodations-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /*** SECTION ACTIVITES ***/
+    .activities {
+        margin-top: 45px;
+    }
+
+    .activities-container-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /****** FOOTER ******/
+    footer {
+        padding: 30px;
+    }
+
+    .footer-container {
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .conditions-content {
+        padding-left: 0;
+    }
+}
